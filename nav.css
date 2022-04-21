@@ -1,0 +1,251 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+body{
+    background-image:linear-gradient(var(--black),var(--black));
+
+}
+:root{
+    --black:#0f0617;
+    --purple:#8230c6;
+}
+/* ////////////////////////nav Bar////////////////////////////////// */
+/* .navbar-brand img{
+    width:100%;
+    height:7vh;
+} */
+.navbar-bar{
+    background-color:#0f0617;
+}
+#grid-icon{
+    width:15px;
+    height:15px;
+}
+.navbar1 li{
+    margin-left:1rem;
+    font-size:1.1rem;
+}
+.nav-container{
+    width:93%;
+    margin:0px auto;
+}
+#nav-buy{
+    background-color:#8230c6;
+    font-size:13px;
+    font-weight:600;
+    border-radius:0.5rem;
+    height:2.3rem;
+}
+#nav-login{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    border:1px solid white;
+    /* border-radius:7px; */
+    color:white;
+    border-radius:0.5rem;
+    height:2.3rem;
+    font-size:13px;
+    font-weight:620;
+    padding:15px;
+}
+#nav-parent{
+    padding:15px 0px;
+
+}
+#navbar-sub{
+    width:28%;
+    display: flex;
+    justify-content:space-between;
+}
+.nav-item div{
+    border-radius:0.5rem;
+
+    
+}
+.n-login{
+    height:fit-content;
+    border-radius:0.5rem;
+    transition:background-color 0.4s ease 0s;
+
+}
+
+.n-buy{
+    transition:background-color 0.4s ease 0s;
+    height:fit-content;
+    border-radius:0.5rem;
+
+
+}
+#nav-buy{
+    transition:background-color 0.3s ease 0s;
+
+}
+#nav-buy:hover{
+    background-color:#430c74;
+
+}
+.n-login:hover{
+    background-color:white;
+
+
+}
+.n-login:hover #nav-login{
+    color:black;
+
+}
+.nav-ic{
+    height:40px;
+    width:40px;
+    background-color:#1b1323;
+    border-radius:25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:background-color 0.3s ease 0s;
+
+}
+.nav-ic:hover{
+    background-color:#342f3a;
+
+}
+/* drop down */
+
+
+.hide-drop{
+    font-family: NotoSansBold,sans-serif;
+    
+    background-color:var(--black);
+    color:rgb(206, 196, 196);
+    position: absolute;
+    top:95%;
+    right: -315%;
+    width:13rem;
+    height:32rem;
+    overflow: hidden;
+    border:1px solid #342f3a;
+    display:none;
+}
+.hide-drop ul{
+    width:100%;
+    list-style-type:none;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    padding-left:0px;
+}
+.hide-drop li{
+    width:90%;
+    margin-top:1rem;
+    padding-left:1.8rem;
+    display: flex;
+    padding:0.5rem;
+    /* align-items: center; */
+    flex-direction: column; 
+    justify-content:left;
+    cursor: pointer;
+    border-radius:0.5rem;
+
+    
+
+}
+.hide-drop li:hover{
+    background-color:#23152f;
+}
+.app-dropdown:hover .hide-drop{
+    display:block;
+} 
+.app:hover .hide-drop{
+    display:block;
+} 
+
+.animation-line-active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:0.12rem;
+    width:75%;
+    margin:0px auto;
+    background-color:white;
+    margin-bottom:0.8rem;
+}
+.animation-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:0.13rem;
+    width:0%;
+    margin:0px auto;
+    background-color:white;
+    margin-bottom:0.8rem;
+    transition:width 0.28s ease-out 0s;
+
+}
+.nav-item:hover .animation-line{
+    width:75%;
+
+}
+
+.nav-tvshow{
+    position: relative;
+    overflow:hidden;
+}
+
+.big-drop-wrapper{
+    display: flex;
+    margin:20px;
+    width:70rem;
+
+}
+.big-drop ul li{
+    color:white;
+    padding:8px;
+    width:12.6rem;
+    margin:1.3rem 0px;
+    border-radius:0.3rem;
+}
+.big-drop ul li:hover{
+    background-color:#23152f;
+
+}
+.big-drop ul :nth-child(1){
+    background-color: #23152f;
+}
+
+
+.big-drop{
+    position:absolute;
+    display: flex;  
+    background-color:var(--black);
+    border:0.8px solid rgb(58, 57, 57);
+    opacity:0;
+}
+.big-drop ul{
+    list-style-type:none;
+    padding:0px;
+    width:100%;
+}
+.drop-right-img{
+    display: flex;
+    width:50rem;
+}
+.drop-right-img .img-sec img{
+    width:16rem;
+    height:9rem;
+    border-radius:0.5rem;
+    margin:7px;
+}
+.drop-left{
+    width: 12.5rem;
+}
+.nav-tvshow:hover{
+    overflow:visible;
+}
+.nav-tvshow:hover .big-drop{
+    opacity:1;
+
+}
+
